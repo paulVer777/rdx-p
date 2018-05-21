@@ -37,13 +37,9 @@ class MainDrawer extends Component {
         this.setState({
 
             isDrawerOpen:false
-
         })
 
     }
-
-
-
     render() {
 
 
