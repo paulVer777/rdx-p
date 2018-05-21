@@ -7,8 +7,8 @@ const initialStateForMessages = {
     messages: [],
     newMessage: {},
     error: '', //odpowiada za tresc errora
-    imWithError:false
-}
+    imWithError: false
+};
 
 /////////////////////////////////////////
 
@@ -23,11 +23,11 @@ const TYPES = {
 
     ADD_MESSSAGE: 'ADD_MESSAGE'
 
-}
+};
 
 ////////////////////////////////////////
 
-///////// KREATORY AKCJI ///////////////////
+///////// KREATORY AKCJI /////////////////// w akcji jest Data, inny sposób.
 
 const ACTIONS = {
 
@@ -48,9 +48,9 @@ const ACTIONS = {
         }
     }),
 
-    handleMessagesWithError: (messages) => ({
+    handleMessagesWithError: (error) => ({
 
-        type: TYPES.FETCHED_MESSAGES_WITH_SUCCES,
+        type: TYPES.FETCHED_MESSAGES_WITH_ERROR,
         data: {
             imBusy: false,
             imWithError: true,
@@ -59,7 +59,31 @@ const ACTIONS = {
     })
 
 
-}
-
+};
 
 ///////////////////////////////////////
+
+////////////// REDUCERY, REDUX DUCKS ///////////////////////
+
+
+export default function reducer(state = initialStateForMessages, action) {
+
+    let newState = {};
+
+    switch (action.type) {
+        case INITIAL_PREFETCH_MESSAGES:
+            newState = {...state, ...action.data};
+            break;
+        case FETCHED_MESSAGES_WITH_SUCCES:
+            newState = {...state, ...action.data};
+            break;
+
+        case FETCHED_MESSAGES_WITH_ERROR:
+            newState = {...state, ...action.data};
+            break;
+
+        default:
+            return state;
+
+    }
+}
