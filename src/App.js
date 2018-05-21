@@ -3,10 +3,10 @@ import Button from '@material-ui/core/Button'
 
 import logo from './logo.svg'
 import './App.css'
-
+import { HashRouter as Router, Route, Link } from 'react-router-dom'
 import MainDrawer from './common/Drawer'
 import AppBar from './common/Appbar'
-
+import Nav from './common/Nav'
 
 class App extends Component {
 
@@ -29,6 +29,9 @@ class App extends Component {
 
     render () {
         return (
+
+            <Router>
+
             <div className="App">
                 <MainDrawer
 
@@ -39,7 +42,11 @@ class App extends Component {
                     handleToggle={()=>{this.handleToggle()}}
 
                 />
+                <Nav/>
             </div>
+
+
+            </Router>
         )
     }
 }

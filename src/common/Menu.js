@@ -8,6 +8,8 @@ import Divider from '@material-ui/core/Divider';
 
 import IconButton from '@material-ui/core/IconButton';
 import {withStyles} from '@material-ui/core/styles';
+import{HashRouter as Router,Route,Link} from 'react-router-dom'
+
 
 const Menu = () => {
 
@@ -16,9 +18,9 @@ const Menu = () => {
         <List>
 
             <Divider/>
-            <MenuItem>Logowanie</MenuItem>
-            <MenuItem>Wiadomości</MenuItem>
-            <MenuItem>Użytkownicy</MenuItem>
+            <MenuItem><Link to="/messages">Wiadomości</Link></MenuItem>
+            <MenuItem><Link to="/users">Użytkownicy</Link></MenuItem>
+            <MenuItem><Link to="/login">Logowanie</Link></MenuItem>
         </List>
     )
 }
