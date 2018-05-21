@@ -1,36 +1,24 @@
-import React, { Component } from 'react';
-import './App.css';
-import Drawer from '@material-ui/core/Drawer';
+import React, { Component } from 'react'
+import Button from '@material-ui/core/Button'
+
+
+import logo from './logo.svg'
+import './App.css'
+
+import {MainDrawer} from './common/Drawer'
 
 class App extends Component {
-  render() {
-    return (
-      <div>
+    render () {
+        return (
+            <div className="App">
+                <MainDrawer/>
 
-          <Drawer
-              variant="persistent"
-              anchor={anchor}
-              open={open}
-              classes={{
-                  paper: classes.drawerPaper,
-              }}
-          >
-              <div className={classes.drawerHeader}>
-                  <IconButton onClick={this.handleDrawerClose}>
-                      {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-                  </IconButton>
-              </div>
-              <Divider />
-              <List>{mailFolderListItems}</List>
-              <Divider />
-              <List>{otherMailFolderListItems}</List>
-          </Drawer>
-
-
-
-      </div>
-    );
-  }
+                <Button variant="raised" color="primary">
+                    Hello World
+                </Button>
+            </div>
+        )
+    }
 }
 
-export default App;
+export default App
