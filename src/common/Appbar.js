@@ -7,7 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const MainAppbar=(props)=>{
 
-    const {isDrawerOpen, handleToggle}=props
+    const {isDrawerOpen, handleToggle}=props //rozbicie propsow.
 
     return(
 

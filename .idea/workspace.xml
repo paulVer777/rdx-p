@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7f5903a-2d88-401a-9fa5-b98dc01b1df2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Drawer.js" afterDir="false" />
-    </list>
+    <list default="true" id="e7f5903a-2d88-401a-9fa5-b98dc01b1df2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Drawer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Drawer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/Drawer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="130">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="49" />
               <folding>
                 <element signature="e#92#137#0" expanded="true" />
               </folding>
@@ -41,11 +38,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Appbar.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Appbar.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/Appbar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+            <state relative-caret-position="336">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,9 +68,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/common/Menu.js" />
-        <option value="$PROJECT_DIR$/src/common/Appbar.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/common/Drawer.js" />
+        <option value="$PROJECT_DIR$/src/common/Appbar.js" />
       </list>
     </option>
   </component>
@@ -153,12 +153,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526887474336</updated>
-      <workItem from="1526887477634" duration="5011000" />
+      <workItem from="1526887477634" duration="5839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5011000" />
+    <option name="totallyTimeSpent" value="5839000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -171,7 +171,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16341592" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
@@ -206,13 +205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Appbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -225,10 +217,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Drawer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="130">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="49" />
           <folding>
             <element signature="e#92#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Appbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>

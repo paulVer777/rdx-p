@@ -29,7 +29,7 @@ class MainDrawer extends Component {
 
     const {isDrawerOpen, handleToggle}=this.props
 
-        console.log(this.props)
+
 
         return (
             <Drawer variant="persistent"
