@@ -16,7 +16,9 @@ const Menu = () => {
         <List>
 
             <Divider/>
-            <MenuItem>Widok1</MenuItem>
+            <MenuItem>Logowanie</MenuItem>
+            <MenuItem>Wiadomości</MenuItem>
+            <MenuItem>Użytkownicy</MenuItem>
         </List>
     )
 }
