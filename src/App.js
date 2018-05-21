@@ -9,11 +9,36 @@ import AppBar from './common/Appbar'
 
 
 class App extends Component {
+
+    state={
+
+        isDrawerOpen:true
+    }
+
+    handleToggle(){
+
+
+        this.setState({
+
+          isDrawerOpen:!this.state.isDrawerOpen
+
+        })
+    }
+
+    //najpierw przekazac propsy, a potem rozlozyc to wewnatrz komponentu
+
     render () {
         return (
             <div className="App">
-                <MainDrawer/>
-                <AppBar/>
+                <MainDrawer
+
+                isDrawerOpen={this.state.isDrawerOpen}
+                handleToggle={()=>{this.handleToggle()}}
+                />
+                <AppBar
+                    handleToggle={()=>{this.handleToggle()}}
+
+                />
             </div>
         )
     }

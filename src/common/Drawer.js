@@ -25,27 +25,15 @@ const styles = theme => ({
 class MainDrawer extends Component {
 
 
-    state={
-
-        isDrawerOpen:true
-
-
-    }
-
-    handleClose(){
-
-        this.setState({
-
-            isDrawerOpen:false
-        })
-
-    }
     render() {
 
+    const {isDrawerOpen, handleToggle}=this.props
+
+        console.log(this.props)
 
         return (
             <Drawer variant="persistent"
-                    open={this.state.isDrawerOpen}
+                    open={isDrawerOpen}
                     anchor={'left'}
                     classes={{
                         paper: this.props.classes.drawerPaper
@@ -53,7 +41,7 @@ class MainDrawer extends Component {
             >
                 <h1>test</h1>
 
-                <IconButton onClick={()=>this.handleClose()}>
+                <IconButton onClick={handleToggle}>
                     <Close />
                 </IconButton>
 

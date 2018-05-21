@@ -7,10 +7,12 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 const MainAppbar=(props)=>{
 
+    const {isDrawerOpen, handleToggle}=props
+
     return(
 
         <AppBar position="static">
-        <IconButton color="inherit" aria-label="Menu">
+        <IconButton onClick={()=>{props.handleToggle()}} color="inherit" aria-label="Menu">
         <MenuIcon/>
         </IconButton>
         </AppBar>
