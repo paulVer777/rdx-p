@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import { HashRouter as Router, Route, Link } from 'react-router-dom'
-
+import {MessagesList} from '../MessageList/index'
 
 const TempView1 = ()=>{
     return (

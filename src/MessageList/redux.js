@@ -1,6 +1,5 @@
 ////////////STAN KOMPONENTU//////////////
 
-
 const initialStateForMessages = {
 
     imBusy: true,
@@ -65,20 +64,19 @@ const ACTIONS = {
 
 ////////////// REDUCERY, REDUX DUCKS ///////////////////////
 
-
 export default function reducer(state = initialStateForMessages, action) {
 
     let newState = {};
 
     switch (action.type) {
-        case INITIAL_PREFETCH_MESSAGES:
+        case TYPES.INITIAL_PREFETCH_MESSAGES:
             newState = {...state, ...action.data};
             break;
-        case FETCHED_MESSAGES_WITH_SUCCES:
+        case TYPES.FETCHED_MESSAGES_WITH_SUCCES:
             newState = {...state, ...action.data};
             break;
 
-        case FETCHED_MESSAGES_WITH_ERROR:
+        case TYPES.FETCHED_MESSAGES_WITH_ERROR:
             newState = {...state, ...action.data};
             break;
 
@@ -86,4 +84,10 @@ export default function reducer(state = initialStateForMessages, action) {
             return state;
 
     }
+}
+
+export {
+
+    TYPES,ACTIONS
+
 }

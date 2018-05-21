@@ -1,0 +1,3 @@
+
+//zapytania do bazy danych
+
